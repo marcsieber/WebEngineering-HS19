@@ -1,6 +1,5 @@
 <html>
 <head>
-%{--    todo: 4 display in nicer layout--}%
     <meta name="layout" content="form"/>
     <title>
         In-Place Calculator
