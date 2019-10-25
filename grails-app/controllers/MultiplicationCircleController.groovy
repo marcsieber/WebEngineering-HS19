@@ -30,6 +30,7 @@ class MultiplicationCircleController {
 
 class MultiplicationCircleModel {
     int segmentCount = 10
+    int tableBase;
 
     // todo: add a property tableBase such that we can modify and refer to it
 
