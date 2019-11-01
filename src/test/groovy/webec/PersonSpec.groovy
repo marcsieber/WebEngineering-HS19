@@ -2,6 +2,12 @@ package webec
 
 class PersonSpec {
 
+    def setup() {
+    }
+
+    def cleanup() {
+    }
+
     void "test construction"() {
 
         given:
