@@ -17,10 +17,10 @@ class BootStrap {
             Date today = new Date().clearTime();
 
             for (int i=0; i<100; i++) {
-                new Booking(booker: dierk, room: oben, day: today + i, slot: Booking.AM).save(failOnError:true)
+                new Booking(booker: marc, room: upstairs, day: today + i, slot: Booking.AM).save(failOnError:true)
             }
 
-            new Booking(booker: dierk, room: oben, day: today, slot: Booking.AM).save(failOnError:true)
+            new Booking(booker: hugo, room: downstairs, day: today, slot: Booking.AM).save(failOnError:true)
 
         }
 
