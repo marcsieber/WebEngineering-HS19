@@ -11,7 +11,7 @@ class BookingController {
         def result = Booking.findAllByBooker(booker)*.room
 
 
-        render text: result.list();
+        respond text: result
     }
 
     static scaffold = Booking;
