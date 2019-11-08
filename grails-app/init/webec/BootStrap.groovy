@@ -1,10 +1,15 @@
 package webec
 
+import grails.util.Environment
 import org.codehaus.groovy.runtime.DateGroovyMethods
 
 class BootStrap {
 
     def init = { servletContext ->
+
+        if(Environment.current != Environment.DEVELOPMENT) { // guard clause
+            return ;
+        }
 
         Person marc = new Person(firstName: "Marc", lastName: "Sieber").save(failOnError: true);
         Person hugo = new Person(firstName: "Hugo", lastName: "Habich").save(failOnError: true);
