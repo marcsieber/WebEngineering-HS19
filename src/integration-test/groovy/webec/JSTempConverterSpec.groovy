@@ -11,7 +11,7 @@ class JSTempConverterSpec extends GebSpec {
 
     void "From celsius to fahrenheit with JavaScript"() {
         when:
-            browser.driver.javascriptEnabled = true
+            try {browser.driver.javascriptEnabled = true} catch (onlyForHtml) {}
             go '/static/Temperatures.html'
         then:
         	title == "Temperature Converter with JavaScript"
