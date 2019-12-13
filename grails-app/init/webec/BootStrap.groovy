@@ -34,9 +34,9 @@ class BootStrap {
         SecRole adminRole = new SecRole(authority: 'ROLE_ADMIN').save(failOnError: true);
         SecRole userRole  = new SecRole(authority: 'ROLE_USER').save(failOnError: true);
 
-        SecUser secDieter = new SecUser(username:'xx', password: 'xx', person: dieter).save(failOnError: true);
+        SecUser secMarc = new SecUser(username:'xx', password: 'xx', person: marc).save(failOnError: true);
 
-        secService.create(secDieter, userRole);
+        secService.create(secMarc, userRole);
 
         println "*** security user-roles: " + SecUserSecRole.count()
 
