@@ -4,7 +4,7 @@
     <title>
         In-Place Calculator
     </title>
-%{--    todo: 3 add on-page validation--}%
+
     <script>
         function validate(field) {
             if( Number(field.value) < 1.0) {
@@ -22,8 +22,9 @@
 <form action="/inPlaceCalculator/calc" method="get">
     <fieldset class="form padded">
 
-        <tmpl:form_row name="en"    label="En"   model="${calculatorInstance}"/>
-        <tmpl:form_row name="exam"  label="Exam" model="${calculatorInstance}"/>
+        <tmpl:form_row name="en"   label="En"   model="${calculatorInstance}"/>
+
+        <tmpl:form_row name="exam" label="Exam" model="${calculatorInstance}"/>
 
         <div>
             <label>&nbsp;</label>
